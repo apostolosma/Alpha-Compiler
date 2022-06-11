@@ -1,0 +1,117 @@
+/*
+        Apostolos Mavrogiannakis csd3799
+        Varsamis Haralampos csd3744
+        Georgia Rapousi csd3836
+*/
+
+Hello,
+
+*CHANGES FOR PHASE 3,4,5 AT THE END OF THE FILE*
+
+This is a readme file with 3 sections.
+1)How to run the program and 
+2)Some info about the way we handle some errors
+3)Rules recognized
+
+Sec.1) How to run the program.(Updated for Phase45)
+
+-How to run Syntax(Phase3_4):
+
+1)>>>Make syntax<<<
+
+Then,you need to use 3 arguments.It works only if you give 3 arguments.
+
+2)1st argument is the program to run . e.g. ./syntax
+
+3)2nd argument has 2 possible valid values:
+        a)'-' input comes from stdin.
+        b)File(e.g. test1.txt) input comes from a file
+4)3rd argument has 2 possible valid values:
+        a)'-' output is stdout.
+        b)File(e.g. results.txt) output gets written to the results.txt
+
+Correct syntax example : 
+
+./syntax - output_file
+./syntax input_file -
+./syntax - -
+./syntax in_file out_file
+
+-How to run Loader/AVM(Phase5)
+
+1)>>>Make load<<<
+
+Then,you need to use only 1 argument.
+
+2)./load 
+
+-Notes
+
+In case you are wondering why we made it like that,it is because if you run it
+as :
+
+./syntax file
+
+The file is the input or the output? So to avoid confusion we insert the data
+as described above.
+
+Also,in case you choose to run the program from command line after giving your
+input you must type "EXIT;" so that you can exit the parser and finish the
+processing successfully.
+
+Sec.2) Info about the way we handle some errors.
+
+The informative printing of syntax errors that derive from grammar input mistakes
+have been handled in a simple manner.
+
+E.g. unction(a,b){} | {local x; | function x(a b){}  .
+
+We mostly return the line where the error occured and that it might be a missing
+bracket or a missing semicolon or a bad formation of the code.
+
+Other than syntax errors from grammar input mistakes,everyting else is handled 
+with precision.Which means that errors like redeclaration,shadowning,
+accessibility checking is handled carefully.
+
+All the errors that are found are printed at the stderr.In case of an error,
+the table of scopes is not printed.We chose to do it like that because errors
+ussually change the flow of the program and we decided that it should be printed
+only if the program processed everything correctly.But in case you want to see
+the table of scopes even if errors are found in the input,you can go in line 
+786 in the .y file and comment the if(!error_flag).
+
+Sec.3)
+
+The rules that are recognized are always written to the file rules.txt.We don't
+give the option to print them to stdout because if the program recognized 1000
+rules,the final printage will cause a mess in the command line.
+
+For each run you must delete rules.txt because it is in append mode.
+
+*PHASE 3*
+Coming across with an error our implementation doesn't allow the error statement to be inserted in the symbol table,
+so, for instance lets say we want to compile the code below
+
+x=8;
+
+function x() {
+	return 1;
+}
+
+This will print error, function name x already exists in this scope, which means that there will be no insertion for function x in the symbol table, 
+so an additional error will pop-up saying that return statement isn't referring to a function. 
+
+
+*PHASE 4_5*
+
+Implemented Bonuses:
+
+1)Functors
+
+2)Libfunctions
+
+HAVE A NICE SUMMER,Thank you for your cooperation.
+
+https://giphy.com/gifs/foxhomeent-3ohze3kG5qO9DcTUbe
+
+

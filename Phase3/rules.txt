@@ -1,0 +1,1540 @@
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+program -> empty
+
+block2 -> empty
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr AND expr
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr + expr
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr + expr
+expr -> expr <= expr
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr + expr
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+stmt -> block
+whilestmt -> WHILE(expr) stmt
+stmt -> whilestmt
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr * expr
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+elist -> empty
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+term -> -expr
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+idlist2 -> empty
+idlist -> ID idlist2
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr * expr
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+primary -> (funcdef)
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+indexed2 -> empty
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed -> indexedelem indexed2
+objectdef -> [indexed]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+idlist2 -> empty
+idlist2 -> ,ID idlist2
+idlist -> ID idlist2
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+term -> !expr
+expr -> term
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+ifstmt -> IF(expr)stmt 
+stmt -> ifstmt
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> block
+program -> stmt program 
+
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> block
+program -> stmt program 
+
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+const -> NIL
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+idlist2 -> empty
+idlist2 -> ,ID idlist2
+idlist -> ID idlist2
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr + expr
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+primary -> (funcdef)
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+elist -> empty
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+term -> -expr
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+objectdef -> [elist]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+idlist2 -> empty
+idlist -> ID idlist2
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr * expr
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+primary -> (funcdef)
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+indexed2 -> empty
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed -> indexedelem indexed2
+objectdef -> [indexed]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+idlist2 -> empty
+idlist2 -> ,ID idlist2
+idlist -> ID idlist2
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+term -> !expr
+expr -> term
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+ifstmt -> IF(expr)stmt 
+stmt -> ifstmt
+block2 -> empty
+block2 -> stmt block2
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+stmt -> funcdef
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+const -> NIL
+primary -> const
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+member -> lvalue[expr]
+lvalue -> member
+idlist2 -> empty
+idlist2 -> ,ID idlist2
+idlist -> ID idlist2
+lvalue -> ID
+member -> lvalue.ID 
+lvalue -> member
+primary -> lvalue
+term -> primary
+expr -> term
+lvalue -> ID
+primary -> lvalue
+term -> primary
+expr -> term
+expr -> expr + expr
+returnstmt -> RETURN expr;
+stmt -> returnstmt
+block2 -> empty
+block2 -> stmt block2
+block -> {block2}
+funcdef -> FUNTION ID(idlist) block
+primary -> (funcdef)
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+
+lvalue -> ID
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+expr -> expr == expr
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+elist2 -> empty
+elist2 -> ,expr elist2
+elist -> expr elist2
+normcall -> (elist)
+callsuffix -> normcall
+call -> lvalue callsuffix
+primary -> call
+term -> primary
+expr -> term
+stmt -> expr ;
+program -> stmt program 
+
+program -> empty
+
+lvalue -> ID
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+indexed2 -> empty
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed -> indexedelem indexed2
+objectdef -> [indexed]
+primary -> objectdef
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+const -> INT
+primary -> const
+term -> primary
+expr -> term
+const -> STRIN
+primary -> const
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+indexed2 -> empty
+indexed2 -> ,indexedelem indexed2
+indexed2 -> ,indexedelem indexed2
+indexed -> indexedelem indexed2
+objectdef -> [indexed]
+primary -> objectdef
+term -> primary
+expr -> term
+indexedelem -> {expr:expr}
+indexed2 -> empty
+indexed2 -> ,indexedelem indexed2
+indexed -> indexedelem indexed2
+objectdef -> [indexed]
+primary -> objectdef
+term -> primary
+expr -> term
+assignexpr -> lvalue = expr
+expr -> assignexpr 
+stmt -> expr ;
+program -> stmt program 
+

@@ -1,0 +1,9 @@
+/* *
+	this is a comment
+*/
+
+//this is comm
+
+a = 5;
+
+b =6;
